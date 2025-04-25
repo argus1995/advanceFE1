@@ -1,0 +1,237 @@
+.course-main {
+    height: 100%;
+    padding: 64px 120px;
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    align-items: flex-start;
+}
+
+.course-form {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 292px;
+    width: 100%;
+}
+
+.course-form .title {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title h5 {
+    font-family: 'Poppins';    
+}
+
+.title p {
+    font-family: 'DM Sans';
+    color: #333333;
+    opacity: 68%;
+}
+
+.course-form-container {
+    background-color: white;
+    border: 1px solid rgba(58, 53, 65, 0.12);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding-bottom: 4px;
+    padding-right: 16px;
+    font-family: "DM Sans", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    color: #4A505C;
+}
+
+span {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #D32E1F;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #F1F1F1;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #F1F1F1;
+    border-radius: 6px;
+    resize: none;
+    height: 150px;
+    padding: 10px;
+}
+
+.form-group a {
+    text-decoration: none;
+    font-family: "DM Sans", serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22.4px;
+    letter-spacing: 0.2px;
+    text-align: right;
+    color: #4A505C;
+}
+
+.course-list-container {
+    max-width: 872px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(58, 53, 65, 0.12);
+    border-radius: 10px;
+    padding: 20px;
+    gap: 32px;
+    background-color: white;
+}
+
+.course-card {
+    width: 100%;
+    border: 1px solid rgba(58, 53, 65, 0.12);
+    border-radius: 10px;
+}
+
+.course-header {
+    border-bottom: 1px solid rgba(58, 53, 65, 0.12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    background-color: #E2FCD933;
+}
+
+.course-header p {
+    font-family: 'DM Sans';
+    font-weight: 500;
+}
+
+.course-header span {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    color: #38D189;
+}
+
+.course-body {
+    display: flex;
+    border-bottom: 1px solid rgba(58, 53, 65, 0.12);
+    padding: 20px;
+    gap: 36px;
+    background-color: white;
+}
+
+.course-body img {
+    object-fit: cover;
+    width: 172px;
+    height: 172px;
+    border-radius: 10px;
+}
+
+.course-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.cd-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cd-1 h6 {
+    font-family: 'Poppins';
+}
+
+.cd-1 p {
+    font-family: 'DM Sans';
+    color: #333333AD;
+}
+
+.cd-2 {
+    display: flex;
+    gap: 10px;
+}
+
+.cd-2 img {
+    width: 40px;
+    height: 40px;
+}
+
+.cd-2 p {
+    font-family: 'DM Sans';
+    color: #333333AD;
+    font-size: 14px;
+}
+
+.cd-3 {
+    display: flex;
+    gap: 10px;
+    max-width: 200px;
+}
+
+.btn {
+    width: 100%;
+    height: 42px;
+    border: 1px solid #38D189;
+    border-radius: 10px;
+    font-weight: 700;
+    font-family: "DM Sans", serif;
+    cursor: pointer;
+    background-color: #E2FCD933;
+    color: black;
+}
+
+@media screen and (max-width: 992px) {
+    .course-body {
+        flex-direction: column;
+    }
+
+    .course-body img {
+        width: 100%;
+    }
+
+    .cd-2 img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .course-main {
+        flex-direction: column;
+        padding: 28px 20px;
+        gap: 24px;
+    }
+
+    .course-form {
+        max-width: 100%;
+    }
+}

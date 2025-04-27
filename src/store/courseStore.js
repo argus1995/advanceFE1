@@ -23,7 +23,7 @@ const useCourseStore = create(
         }),
         {
             name: 'course-storage',
-            getStorage: () => localStorage,
+            getStorage: () => localStorage
         }
     )
 )
